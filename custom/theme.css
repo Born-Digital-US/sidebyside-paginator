@@ -1,4 +1,4 @@
 html body {margin: 20px;}
-img {max-width: 100%;}
+img {max-height: 600px;}
 
 .side-by-side .pane {height: 600px; overflow-y: scroll;}

@@ -19,6 +19,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="contrib/jquery.appear.js"></script>
+    <script src="custom/paginator.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,7 +56,7 @@
 
           <p>Nullam finibus orci justo, ut aliquet nisi imperdiet ornare. Sed viverra turpis eget diam ultricies, quis consectetur ante mollis. Aliquam vestibulum lectus at ligula semper, non posuere sapien scelerisque. Fusce sodales nec elit ac rutrum. Suspendisse id euismod neque, sit amet laoreet sem. Morbi vestibulum sem in tempus mollis. Duis volutpat ex tortor, id consectetur mauris laoreet at. Cras posuere eget ex quis vehicula. Nullam mauris mauris, lacinia sit amet ullamcorper vitae, accumsan a dolor.</p>
 
-          <p>Maecenas ultrices sem non odio malesuada, mollis sodales diam dapibus. Nunc id massa ac justo iaculis pretium. Proin tempor id lectus vitae vulputate. Cras vulputate eu nulla vel cursus. Quisque viverra vulputate diam et pretium. Donec varius pulvinar nibh, at semper sapien facilisis sit amet. Nullam tincidunt maximus nisi, et dignissim eros rutrum sit amet. Vestibulum in lorem elementum, ornare nibh nec, vestibulum dolor.</p>
+          <p><a class="scroll-trigger" href="#page-2" rel="2">Maecenas ultrices sem non odio malesuada</a>, mollis sodales diam dapibus. Nunc id massa ac justo iaculis pretium. Proin tempor id lectus vitae vulputate. Cras vulputate eu nulla vel cursus. Quisque viverra vulputate diam et pretium. Donec varius pulvinar nibh, at semper sapien facilisis sit amet. Nullam tincidunt maximus nisi, et dignissim eros rutrum sit amet. Vestibulum in lorem elementum, ornare nibh nec, vestibulum dolor.</p>
 
           <p>Nullam sodales nulla non odio malesuada, vel ultrices neque feugiat. Proin lacus justo, aliquam eu sapien sit amet, fermentum scelerisque sapien. Quisque vel blandit est. Aliquam consequat eros ac magna accumsan, sed ornare felis euismod. Etiam volutpat nec nisl sit amet vulputate. Proin metus felis, dapibus at luctus in, venenatis non ex. Pellentesque nunc nunc, congue ut tempus eget, pulvinar a quam. Vestibulum at suscipit odio, ut hendrerit lacus. Proin velit nulla, euismod sed arcu id, dapibus gravida eros. Ut metus dolor, sagittis eget tempus posuere, tincidunt nec risus. Vivamus eget eros vel dui vulputate lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam maximus magna libero. Aliquam erat volutpat. Nulla facilisi.</p>
 
@@ -114,12 +117,12 @@
           <p>Fusce sed eros ex. Proin varius ut odio nec pellentesque. Nam dignissim turpis vitae ex euismod elementum. Donec ultrices purus ac nunc volutpat, vel viverra est euismod. Curabitur et felis sit amet tortor dignissim laoreet. Etiam ante mauris, aliquet dignissim augue quis, pellentesque mattis tortor. Cras risus eros, mattis eu aliquam vel, fringilla nec arcu. Suspendisse sed finibus velit. Suspendisse a nibh nec eros ultricies aliquam in eu purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer eu diam sed odio vulputate pharetra. Nam sed dolor diam. Duis ullamcorper libero enim, eget dapibus justo accumsan non. Duis eu nibh sit amet urna scelerisque pellentesque et quis tellus. Nullam enim ex, convallis ut ligula nec, commodo volutpat purus. Nunc dignissim, neque id pharetra faucibus, ex urna accumsan lorem, sed accumsan turpis tellus ut felis.</p>
         </article>
       </div>
-      <div class="pages col-xs-6 pane">
+      <div class="pages col-xs-6 pane" id="page-scroller">
         <article>
-          <p><img src="pages/Faculty-Survey-p1.jpg" alt="Page 1" />
-          <p><img src="pages/Faculty-Survey-p2.jpg" alt="Page 2" />
-          <p><img src="pages/Faculty-Survey-p3.jpg" alt="Page 3" />
-          <p><img src="pages/Faculty-Survey-p4.jpg" alt="Page 4" />
+          <img src="pages/Faculty-Survey-p1.jpg" alt="Page 1" id="page-1" /> Page 1
+          <img src="pages/Faculty-Survey-p2.jpg" alt="Page 2" id="page-2" /> Page 2
+          <img src="pages/Faculty-Survey-p3.jpg" alt="Page 3" id="page-3" /> Page 3
+          <img src="pages/Faculty-Survey-p4.jpg" alt="Page 4" id="page-4" /> Page 4
         <article>
       </div>
     </div>
