@@ -33,14 +33,11 @@
   <body>
     <h1>Demo of a side-by-side paginator for Davidson's ILLiADS team</h1>
 
-    <div class="row">
-        <div class="col-xs-6"><h2>Narrative</h2></div>
-        <div class="col-xs-6"><h2>Reference</h2></div>
-      </div>
     <div class="row side-by-side">
-      <div class="col-xs-6 pane">
+      <div class="col-xs-6 pane" id="narrative-scroller">
         <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor magna eu felis rhoncus, vel sollicitudin urna elementum. Morbi rutrum eget sem at dictum. Donec dignissim finibus augue, at euismod metus pretium sit amet. Curabitur feugiat vitae ligula et tempor. Pellentesque sed purus vel nulla tincidunt venenatis. Quisque pellentesque purus id erat ornare, id auctor odio fermentum. Quisque non odio non enim ullamcorper fermentum vitae at orci. Sed tortor eros, blandit non ante sit amet, volutpat eleifend neque.</p>
+          <h2>Narrative</h2>
+          <p><a class="scroll-trigger" href="#page-1" rel="1"></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor magna eu felis rhoncus, vel sollicitudin urna elementum. Morbi rutrum eget sem at dictum. Donec dignissim finibus augue, at euismod metus pretium sit amet. Curabitur feugiat vitae ligula et tempor. Pellentesque sed purus vel nulla tincidunt venenatis. Quisque pellentesque purus id erat ornare, id auctor odio fermentum. Quisque non odio non enim ullamcorper fermentum vitae at orci. Sed tortor eros, blandit non ante sit amet, volutpat eleifend neque.</p>
 
           <p>Duis rutrum mollis pharetra. Vivamus quis mattis leo. Duis in pulvinar magna, quis dapibus tellus. Ut tempus ultrices enim, ac dignissim justo dapibus eget. Vestibulum gravida est ac mauris scelerisque tempus. Vivamus ut odio fringilla, faucibus dui in, malesuada ligula. Nam eget tincidunt ligula. Vivamus a nisi sapien. Morbi sit amet sodales enim, eget tristique mauris. Morbi malesuada est quis finibus vulputate. Nam dignissim tincidunt nibh, vulputate rutrum augue rutrum quis. Vivamus semper dictum elit eget viverra. Suspendisse porttitor nec massa quis posuere. Pellentesque condimentum mi in dui varius tincidunt.</p>
 
@@ -72,7 +69,7 @@
 
           <p>Aenean fringilla malesuada lacus nec dapibus. Nam justo eros, porttitor nec semper eget, aliquam at magna. Pellentesque odio purus, porttitor eu neque at, eleifend venenatis neque. Donec eget nunc bibendum, dapibus arcu eget, vehicula nisi. Aenean interdum lobortis nulla, euismod tincidunt neque. Nulla interdum erat sit amet ultricies fermentum. Quisque vitae sodales sem.</p>
 
-          <p>Sed dignissim sagittis tortor, id aliquet erat posuere sit amet. Proin dignissim arcu odio. Suspendisse potenti. Aenean semper aliquam arcu, in gravida nulla rhoncus eget. Vestibulum scelerisque faucibus purus, ut posuere lacus sodales vel. Mauris tincidunt metus non metus dapibus, sit amet egestas libero interdum. Pellentesque ut auctor neque, a interdum quam. Nulla in consectetur risus. Nam gravida dolor vitae elit imperdiet, quis euismod justo pharetra.</p>
+          <p><a class="scroll-trigger" href="#page-3" rel="3"></a>Sed dignissim sagittis tortor, id aliquet erat posuere sit amet. Proin dignissim arcu odio. Suspendisse potenti. Aenean semper aliquam arcu, in gravida nulla rhoncus eget. Vestibulum scelerisque faucibus purus, ut posuere lacus sodales vel. Mauris tincidunt metus non metus dapibus, sit amet egestas libero interdum. Pellentesque ut auctor neque, a interdum quam. Nulla in consectetur risus. Nam gravida dolor vitae elit imperdiet, quis euismod justo pharetra.</p>
 
           <p>Nullam eu faucibus est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque bibendum purus ac eros pulvinar scelerisque. Aenean id ante tempus felis cursus maximus venenatis vel lectus. Nulla in euismod odio, ac congue urna. Nullam ac tortor nec orci tincidunt rutrum id eu nisi. Vivamus vel sagittis diam. Proin commodo velit ipsum, eu lobortis dui consequat eget. Integer placerat mi turpis, eu faucibus elit elementum tincidunt. Pellentesque id cursus dolor, eu sodales est. Sed non diam dui. Proin ut diam semper, sollicitudin nisl vitae, elementum magna. Pellentesque placerat mollis velit in scelerisque. Suspendisse mattis elementum velit, nec egestas nibh.</p>
 
@@ -98,7 +95,7 @@
 
           <p>Nullam mi turpis, placerat vitae turpis id, porttitor aliquam leo. Quisque facilisis quam turpis, non mollis ipsum tincidunt ac. Ut justo velit, vestibulum vitae enim eu, egestas pulvinar libero. Fusce sit amet ante tincidunt, commodo erat in, maximus lorem. Sed odio nulla, congue quis ipsum non, sodales mattis metus. Aliquam ut mauris euismod, tincidunt leo eu, malesuada eros. Phasellus ullamcorper lectus eu nibh sollicitudin molestie. Morbi neque sem, auctor vel libero at, lacinia posuere justo. Curabitur turpis elit, ultrices sed odio quis, suscipit tincidunt nibh. Morbi eu arcu in turpis consequat pulvinar.</p>
 
-          <p>Praesent porta odio at libero ultrices, dictum porta tellus sollicitudin. Maecenas a dapibus ex. Integer tincidunt odio vel quam posuere tincidunt. Aenean sit amet pharetra velit. Nulla imperdiet fermentum nibh quis vestibulum. Vivamus bibendum lorem eget tellus placerat, ut volutpat massa blandit. Duis purus eros, auctor in felis congue, placerat faucibus quam. Vestibulum feugiat odio eros. Curabitur eget congue magna. Phasellus id libero pharetra, vulputate orci sed, dignissim ante. Nunc non nunc nec odio semper porttitor. Suspendisse vel nisl in massa laoreet ullamcorper. Nunc vel malesuada magna.</p>
+          <p><a class="scroll-trigger" href="#page-4" rel="4"></a>Praesent porta odio at libero ultrices, dictum porta tellus sollicitudin. Maecenas a dapibus ex. Integer tincidunt odio vel quam posuere tincidunt. Aenean sit amet pharetra velit. Nulla imperdiet fermentum nibh quis vestibulum. Vivamus bibendum lorem eget tellus placerat, ut volutpat massa blandit. Duis purus eros, auctor in felis congue, placerat faucibus quam. Vestibulum feugiat odio eros. Curabitur eget congue magna. Phasellus id libero pharetra, vulputate orci sed, dignissim ante. Nunc non nunc nec odio semper porttitor. Suspendisse vel nisl in massa laoreet ullamcorper. Nunc vel malesuada magna.</p>
 
           <p>Nunc eget pellentesque purus. Sed non justo vel nisl porttitor aliquam ac quis elit. Maecenas sagittis ex nec felis consectetur, eu interdum nisl elementum. Suspendisse iaculis, dolor a bibendum lobortis, tortor justo pharetra justo, nec ultrices velit lacus nec lorem. Cras sollicitudin sem felis, at efficitur risus aliquam a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris tincidunt placerat leo vel euismod. Morbi id feugiat mauris, nec pulvinar lacus. Praesent congue sodales libero non porttitor. Vivamus id dictum felis, sed consectetur ipsum. Nullam faucibus eleifend tristique.</p>
 

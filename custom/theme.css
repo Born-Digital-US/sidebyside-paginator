@@ -1,4 +1,4 @@
 html body {margin: 20px;}
 img {max-height: 600px;}
 
-.side-by-side .pane {height: 600px; overflow-y: scroll;}
+.side-by-side #page-scroller {position: fixed; margin-left: 50%; height: 600px; overflow-y: scroll;}

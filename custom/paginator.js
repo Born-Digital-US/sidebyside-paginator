@@ -1,21 +1,13 @@
 $(function() {
-  // var $appeared = $('#appeared');
-  // var $disappeared = $('#disappeared');
-  //
-  // $('section h3').appear();
-  // $('#force').on('click', function() {
-  //   $.force_appear();
-  // });
 
-  $(document.body).on('appear', 'a.scroll-trigger', function(e, $affected) {
-    // this code is executed for each appeared element
+  $('a.scroll-trigger').appear();
 
-    $('#page-scroller').scrollTo( $("#page-2"), {duration:30} )
-  });
+  $('a.scroll-trigger').on('appear', function(event, $all_appeared_elements) {
+      // this element is now inside browser viewport
 
-  $(document.body).on('disappear', 'a.scroll-trigger', function(e, $affected) {
-    // this code is executed for each disappeared element
+      // e.g. $('#page-scroller').scrollTo( $( "#page-2" ), {duration:30} );
+      $('#page-scroller').scrollTo( $( "#page-"+$all_appeared_elements[0].rel ), {duration:30} );
 
-    // intentionally blank for the time being
-  });
+      //alert('hi');
+    });
 });
